@@ -1,10 +1,16 @@
+@ECHO off
+<# Author: Luis Rita - 6 Jul 2018
+Run MACVENDOR API in cmd/powershell
+This file is the one that executes the API request
+ to be used when the folder containing them is added to system PATH environment variable. After that just run speedtest on cmd/powershell
+#>
 param (
     [string]$mac = ""
 )
 $escMac = [Uri]::EscapeDataString($mac)
 
 if (-Not $mac){
-    Write-Error "Please Enter a MAC Address"
+    Write-Error "MAC Address Empty. Please Enter a MAC Address"
 }
 
 try {
