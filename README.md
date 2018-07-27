@@ -37,3 +37,8 @@ It accepts MAC addresses in the following formats:
   + 00.11.22.33.44.55
   + 001122334455
   + 0011.2233.4455
+  
+###  Disclaimer 
+ _This is something that I use often and therefore decided to share, there are some limitations to the service. I advise on going to https://macvendors.com/ to get more       information about the service and open an account there for paid unlimited querying. After that you may edit the script to add auth details._
+    _This repo only intends on helping to add it to command prompt and powershell either with the free plan or after you have setup your account._
+  
