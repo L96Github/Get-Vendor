@@ -3,6 +3,9 @@ param (
 )
 $escMac = [Uri]::EscapeDataString($mac)
 
+if (-Not $mac){
+    Write-Error "Please Enter a MAC Address"
+}
 
 try {
     $result = (Invoke-WebRequest https://api.macvendors.com/$escMac).Content
