@@ -12,10 +12,10 @@ It allows you to use the api by calling it from powershell or command prompt.
 1. Clone or download this repo.
 
 2. Add the path to the folder you downloaded to your `PATH` enviroment variable.
-  + Control Panel > System > Change Settings
-  + Go to 'Advanced' tab and click on 'Environment Variables'
-  + On 'System Variables' find the variable 'Path' and double click
-  + Click 'New' and insert the path where you downloaded this repo
+  + Go to `Control Panel > System > Change Settings` 
+  + Go to `'Advanced'` tab and click on `'Environment Variables'`
+  + On `'System Variables'` find the variable `'Path'` and double click
+  + Click `'New'` and insert the path where you downloaded this repo
 
 3. Restart your command line. If Powershell or Command Prompt was open, close and reopen the programs.
 
