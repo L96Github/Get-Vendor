@@ -1,4 +1,3 @@
-@ECHO off
 <# Author: Luis Rita - 6 Jul 2018
 Run MACVENDOR API in cmd/powershell
 This file is the one that executes the API request
