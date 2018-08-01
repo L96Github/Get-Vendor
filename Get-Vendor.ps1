@@ -8,6 +8,8 @@ param (
 )
 $escMac = [Uri]::EscapeDataString($mac)
 
+Write-Output " "
+
 if (-Not $mac){
     Write-Error "MAC Address Empty. Please Enter a MAC Address"
 }
@@ -15,16 +17,16 @@ if (-Not $mac){
 try {
     $result = (Invoke-WebRequest https://api.macvendors.com/$escMac).Content
 
-    Write-Output "Mac: $mac"
+    Write-Output "`tMac: $mac"
 
     If(-Not $result){
-        Write-Output "Not Found"
+        Write-Output "`tNot Found"
     }
     Else{
-        Write-Output "Vendor: $result"
+        Write-Output "`tVendor: $result"
     }
 } catch {
-    Write-Output "Mac: $mac"
+    Write-Output "`tMac: $mac"
     Write-Output $_.Exception.Response.StatusDescription
 }
-
+Write-Output " "
